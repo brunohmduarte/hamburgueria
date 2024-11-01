@@ -1,9 +1,9 @@
-import Signup from "./src/screens/signup/signup.jsx"
+import Home from "./src/screens/home/home.jsx";
 
 export default function App() {
   return (
     <>
-      <Signup />
+      <Home />
     </>
   );
 }

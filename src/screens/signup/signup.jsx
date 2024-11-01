@@ -14,7 +14,7 @@ export default function Signup() {
         <TextInput style={styles.input} placeholder="E-mail" />
         <TextInput style={styles.input} placeholder="Whatsapp" />
         <TextInput style={styles.input} secureTextEntry={true} placeholder="Senha" />
-        <Button label="Cadastrar"/>
+        <Button label="Continuar"/>
       </View>
 
       <View style={styles.footer}>

@@ -18,7 +18,7 @@ export const styles = StyleSheet.create({
       color: COLORS.quartenary
     },
     input: {
-      padding: 14,
+      padding: 10,
       marginBottom: 14,
       backgroundColor: "#D9D9D9",
       borderRadius: 8
