@@ -5,15 +5,19 @@ export const styles = StyleSheet.create({
     container: {
       backgroundColor: COLORS.bgPage,
       flex: 1,
-      justifyContent: "space-between",
+      justifyContent: "center",
       padding: 40
     },
     containerLogo: {
-      alignItems: "center"
+      alignItems: "center",
+      marginBottom: 40
+    },
+    containerBody: {
+      marginBottom: 40
     },
     logo: {
-      width: 100,
-      height: 50,
+      width: 180,
+      height: 90,
       textAlign: "center",
       color: COLORS.quartenary
     },

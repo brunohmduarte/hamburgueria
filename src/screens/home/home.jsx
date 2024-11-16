@@ -45,7 +45,6 @@ export default function Home() {
         <Text>Carousel de banners de anúncios</Text>
       </View>
 
-
       <View style={styles.showcase}>
         <View>
           <Text>Título</Text>

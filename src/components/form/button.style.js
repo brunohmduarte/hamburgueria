@@ -1,5 +1,5 @@
 import { StyleSheet } from "react-native";
-import { COLORS } from "../../constants/theme.js";
+import { COLORS, FONT_SIZE } from "../../constants/theme.js";
 
 export const styles = StyleSheet.create({
     btn: {
@@ -11,7 +11,7 @@ export const styles = StyleSheet.create({
     },
     label: {
         color: "#FFF",
-        fontSize: 16,
+        fontSize: FONT_SIZE.md,
         fontWeight: "500",
         textTransform: "uppercase",
         textAlign: "center"

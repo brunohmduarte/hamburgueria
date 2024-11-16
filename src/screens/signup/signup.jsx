@@ -1,15 +1,16 @@
 import { Text, TextInput, TouchableOpacity, View } from "react-native";
 import Button from "../../components/form/button.jsx";
 import { styles } from "./signup.style.js";
+import Header from "../../components/header/header.jsx";
 
 export default function Signup() {
   return (
     <View style={styles.container}>
       <View style={styles.containerLogo}>
-        <Text style={styles.logo}>LOGO</Text>
+        <Header title="Crie sua conta" style={styles.logo} />
       </View>
 
-      <View>
+      <View style={styles.containerBody}>
         <TextInput style={styles.input} placeholder="Nome" />
         <TextInput style={styles.input} placeholder="E-mail" />
         <TextInput style={styles.input} placeholder="Whatsapp" />

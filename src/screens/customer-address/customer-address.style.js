@@ -20,7 +20,7 @@ export const styles = StyleSheet.create({
   input: {
     padding: 10,
     marginBottom: 14,
-    backgroundColor: "#D9D9D9",
+    backgroundColor: COLORS.lightGray,
     borderRadius: 8
   },
   footer: {
