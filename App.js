@@ -1,9 +1,9 @@
-import Signup from "./src/screens/signup/signup.jsx";
+import Routes from "./src/routes.js";
 
 export default function App() {
   return (
     <>
-      <Signup />
+      <Routes />
     </>
   );
 }

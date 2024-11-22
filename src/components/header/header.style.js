@@ -2,8 +2,8 @@ import { COLORS } from "../../constants/theme.js";
 
 export const styles = {
   logo: {
-    width: 250,
-    height: 85,
+    width: "100%",
+    height: "150",
     resizeMode: 'contain'
   },
   description: {
