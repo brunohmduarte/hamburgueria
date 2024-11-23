@@ -1,45 +1,41 @@
-import { Button, SafeAreaView, Text, TextInput, View } from "react-native";
+import { useState } from "react";
+import { Image, Text, TextInput, TouchableOpacity, View } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 import { styles } from "./home.style.js"
+import icons from "../../constants/icons.js";
+import { categories } from "../../constants/Data.js";
+import MainCategory from "../../components/Categories/main-category.jsx";
 
 export default function Home() {
+
+  const [search, setSearch] = useState("");
+
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.header}>
-        <Text>Menu</Text>
-        <Text>Notifiy</Text>
-        <Text>QR Code</Text>
+        <Image source={icons.menu} style={styles.icons} />
+        <Image source={icons.shoppingBag} style={styles.icons} />
       </View>
 
       <View style={styles.greetings}>
-        <Text>Chegou a hora de matar a sua fome!</Text>
+        <Text style={styles.greetingsTitle}>Chegou a hora de matar a fome!</Text>
       </View>
 
       <View style={styles.search}>
-        <Text>Encontre os melhores hamburguers de sua preferência e faça o seu pedido por aqui.</Text>
+        <Text style={styles.searchTitle}>Encontre os melhores hamburguers de sua preferência e faça o seu pedido por aqui.</Text>
         <View style={styles.searchInputBox}>
-          <TextInput style={styles.searchInput} placeholder="O que você está procurando?"/>
-          <Button title="Buscar"/>
+          <TextInput 
+            style={styles.searchInput} 
+            placeholder="O que você está procurando?"
+            onChangeText={(data) => setSearch(data)}
+            value={search} />
+          <TouchableOpacity style={styles.searchBtn}>
+            <Image source={icons.search} style={styles.icons} />
+          </TouchableOpacity>
         </View>
       </View>
 
-      <View style={styles.categories}>
-        <View style={styles.category}>
-          <Text>Icone</Text>
-          <Text>Hamburguers</Text>
-        </View>
-        <View style={styles.category}>
-          <Text>Icone</Text>
-          <Text>Batata frita</Text>
-        </View>
-        <View style={styles.category}>
-          <Text>Icone</Text>
-          <Text>Bebidas</Text>
-        </View>
-        <View style={styles.category}>
-          <Text>Icone</Text>
-          <Text>Sobremesa</Text>
-        </View>
-      </View>
+      <MainCategory data={categories} />
 
       <View style={styles.ads}>
         <Text>Carousel de banners de anúncios</Text>
